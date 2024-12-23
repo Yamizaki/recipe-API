@@ -440,7 +440,7 @@
         "kind": 6,
         "importPath": "app.core.test.test_models",
         "description": "app.core.test.test_models",
-        "peekOfCode": "class ModelTests(TestCase):\n    def test_create_user_with_email_successful(self):\n        \"\"\"Test creating a new user with an email is successful\"\"\"\n        email = 'test@example.com'\n        password = 'testpass123'\n        user = get_user_model().objects.create_user(\n            email=email,\n            password=password,\n        )\n        self.assertEqual(user.email, email)",
+        "peekOfCode": "class ModelTests(TestCase):\n    def test_create_user_with_email_successful(self):\n        \"\"\"Test creating a new user with an email is successful\"\"\"\n        email = \"test@example.com\"\n        password = \"testpass123\"\n        user = get_user_model().objects.create_user(\n            email=email,\n            password=password,\n        )\n        self.assertEqual(user.email, email)",
         "detail": "app.core.test.test_models",
         "documentation": {}
     },
