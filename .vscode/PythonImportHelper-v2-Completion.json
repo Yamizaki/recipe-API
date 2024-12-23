@@ -106,6 +106,30 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "patch",
         "importPath": "unittest.mock",
         "description": "unittest.mock",
@@ -130,6 +154,22 @@
         "documentation": {}
     },
     {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -138,11 +178,27 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionsMixin",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -285,7 +341,7 @@
         "kind": 5,
         "importPath": "app.app.settings",
         "description": "app.app.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'core.User'",
         "detail": "app.app.settings",
         "documentation": {}
     },
@@ -294,7 +350,7 @@
         "kind": 5,
         "importPath": "app.app.settings",
         "description": "app.app.settings",
-        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'core.User'",
         "detail": "app.app.settings",
         "documentation": {}
     },
@@ -303,7 +359,7 @@
         "kind": 5,
         "importPath": "app.app.settings",
         "description": "app.app.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'core.User'",
         "detail": "app.app.settings",
         "documentation": {}
     },
@@ -312,7 +368,7 @@
         "kind": 5,
         "importPath": "app.app.settings",
         "description": "app.app.settings",
-        "peekOfCode": "STATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'core.User'",
         "detail": "app.app.settings",
         "documentation": {}
     },
@@ -321,7 +377,16 @@
         "kind": 5,
         "importPath": "app.app.settings",
         "description": "app.app.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'core.User'",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'core.User'",
         "detail": "app.app.settings",
         "documentation": {}
     },
@@ -353,6 +418,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "app.core.migrations.0001_initial",
+        "description": "app.core.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "app.core.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
         "label": "CommandTests",
         "kind": 6,
         "importPath": "app.core.test.test_commands",
@@ -362,12 +436,39 @@
         "documentation": {}
     },
     {
+        "label": "ModelTests",
+        "kind": 6,
+        "importPath": "app.core.test.test_models",
+        "description": "app.core.test.test_models",
+        "peekOfCode": "class ModelTests(TestCase):\n    def test_create_user_with_email_successful(self):\n        \"\"\"Test creating a new user with an email is successful\"\"\"\n        email = 'test@example.com'\n        password = 'testpass123'\n        user = get_user_model().objects.create_user(\n            email=email,\n            password=password,\n        )\n        self.assertEqual(user.email, email)",
+        "detail": "app.core.test.test_models",
+        "documentation": {}
+    },
+    {
         "label": "CoreConfig",
         "kind": 6,
         "importPath": "app.core.apps",
         "description": "app.core.apps",
         "peekOfCode": "class CoreConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'core'",
         "detail": "app.core.apps",
+        "documentation": {}
+    },
+    {
+        "label": "UserManager",
+        "kind": 6,
+        "importPath": "app.core.models",
+        "description": "app.core.models",
+        "peekOfCode": "class UserManager(BaseUserManager):\n    def create_user(self, email, password=None, **extra_fields):\n        user = self.model(email=self.normalize_email(email), **extra_fields)\n        user.set_password(password)\n        user.save(using=self._db)\n        return user\nclass User(AbstractBaseUser, PermissionsMixin):\n    email = models.EmailField(max_length=255, unique=True)\n    name = models.CharField(max_length=255)\n    is_active = models.BooleanField(default=True)",
+        "detail": "app.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "app.core.models",
+        "description": "app.core.models",
+        "peekOfCode": "class User(AbstractBaseUser, PermissionsMixin):\n    email = models.EmailField(max_length=255, unique=True)\n    name = models.CharField(max_length=255)\n    is_active = models.BooleanField(default=True)\n    is_staff = models.BooleanField(default=False)\n    objects = UserManager()\n    USERNAME_FIELD = \"email\"",
+        "detail": "app.core.models",
         "documentation": {}
     },
     {
