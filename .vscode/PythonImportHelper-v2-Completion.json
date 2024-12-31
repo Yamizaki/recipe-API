@@ -458,7 +458,7 @@
         "kind": 6,
         "importPath": "app.core.models",
         "description": "app.core.models",
-        "peekOfCode": "class UserManager(BaseUserManager):\n    def create_user(self, email, password=None, **extra_fields):\n        user = self.model(email=self.normalize_email(email), **extra_fields)\n        user.set_password(password)\n        user.save(using=self._db)\n        return user\nclass User(AbstractBaseUser, PermissionsMixin):\n    email = models.EmailField(max_length=255, unique=True)\n    name = models.CharField(max_length=255)\n    is_active = models.BooleanField(default=True)",
+        "peekOfCode": "class UserManager(BaseUserManager):\n    def create_user(self, email, password=None, **extra_fields):\n        if not email:\n            raise ValueError(\"User must have an email address\")\n        lower_email = email.lower()\n        user = self.model(email=lower_email, **extra_fields)\n        user.set_password(password)\n        user.save(using=self._db)\n        return user\n    def create_superuser(self, email, password):",
         "detail": "app.core.models",
         "documentation": {}
     },
